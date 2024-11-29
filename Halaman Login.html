@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Halaman Login.css">
+    <title>Halaman Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Halaman Login</h2>
+        <form id="loginForm" onsubmit="return confirmLogin()">
+            <label for="username">Username:</label>
+            <input type="text" id="Username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="Password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Apakah Anda Ingin Login?</p>
+            <button onclick="submitForm()">Ya</button>
+            <button onclick="closePopup()">Tidak</button>
+        </div>
+    </div>
+    
+    <script>
+        function showDialog() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                document.getElementById('popup').style.display = 'flex';
+                return false; // Mencegah form dari submit
+            }
+            return true; // Jika tidak ada username/password, lanjutkan submit
+        }
+
+        function confirmLogin() {
+            window.location.href = 'kelompok 1.html'; 
+        }
+
+        function closeDialog() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <script src="Halaman Login.js">Halaman Login.js</script>
+</body>
+</html>

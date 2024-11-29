@@ -1,0 +1,53 @@
+/*ini selector universal*/
+*{
+  font-family: 'tahoma';
+}
+
+/*selector id*/
+.artikel{
+  color:darkgreen;
+}
+
+/*selector class*/
+.tanggal{
+  color:red;
+}
+
+/*selector tag*/
+h3{
+  font-size:12px;
+}
+
+/*selector tag */
+.credit{
+  font-weight:bold;
+}
+
+/*selector class*/
+.penulis{
+  color:purple;
+}
+
+/*selector tag*/
+h3+p{
+ color:red;
+ }
+ 
+/*selector tag*/
+span{
+  color:blue;
+}
+
+/*selector id*/
+#artikel-1{
+  background: linear-gradient(90deg, rgba(34,193,195,1) , rgba(240,45,253,1) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*selector id*/ 
+#artikel-2{
+  background: linear-gradient(90deg, rgba(34,193,195,1) , rgba(240,45,253,1) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

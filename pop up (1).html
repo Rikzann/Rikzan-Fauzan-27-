@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="pop up.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Halaman Login</h2>
+        <form id="loginForm" onsubmit="return showDialog()">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Apakah Anda ingin login?</p>
+            <button class="margin" onclick="confirmLogin()">Ya</button>
+            <button onclick="closeDialog()">Tidak</button>
+        </div>
+    </div>
+
+    <script src="pop up.js">pop up.js</script>
+</body>
+</html>
